@@ -1,4 +1,4 @@
-# cmake-includer
+# cmakeLimiter
 Include cmake subprojects disabling some functionalities like libraries or applications
 
 # Usage
