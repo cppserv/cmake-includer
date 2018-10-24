@@ -94,7 +94,8 @@ if (NOT CMAKE_LIMITER_NOREDIFINE)
     execute_process(
         COMMAND git describe --always --tags
         WORKING_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}
-        OUTPUT_VARIABLE cmakelimit_VERSION)
+        OUTPUT_VARIABLE cmakelimit_VERSION
+        OUTPUT_STRIP_TRAILING_WHITESPACE)
 
     MESSAGE(STATUS "Included CMake-Limiter " ${cmakelimit_VERSION})
 
